@@ -1,0 +1,8 @@
+Error,File,Start Line,End Line
+Set node has both name AND var values,..\..\storage/categories\basic_feelings.aiml,21,27
+Set node has both name AND var values,..\..\storage/categories\basic_feelings.aiml,98,103
+Set node has both name AND var values,..\..\storage/categories\basic_responses.aiml,134,137
+Set node has both name AND var values,..\..\storage/categories\basic_responses.aiml,217,220
+Set node has both name AND var values,..\..\storage/categories\basic_responses.aiml,231,234
+Set node has both name AND var values,..\..\storage/categories\basic_responses.aiml,235,238
+Set node has both name AND var values,..\..\storage/categories\basic_responses.aiml,282,285

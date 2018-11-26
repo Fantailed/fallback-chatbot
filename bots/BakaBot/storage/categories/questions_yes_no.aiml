@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+<category>
+    <pattern>IS IT *</pattern>
+    <template>
+    <random>
+        <li>Yes, it is.</li>
+        <li>No, it's not.</li>
+        <li>I don't know.</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>IS HE *</pattern>
+    <template>
+    <random>
+        <li>Yes, he is.</li>
+        <li>No, he's not.</li>
+        <li>I don't know.</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>IS SHE *</pattern>
+    <template>
+    <random>
+        <li>Yes, she is.</li>
+        <li>No, she's not.</li>
+        <li>I don't know.</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>DOES *</pattern>
+    <template>
+    <random>
+        <li>Yes, it does.</li>
+        <li>No, it's doesn't.</li>
+        <li>I'm not sure.</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>DO YOU *</pattern>
+    <template>
+    <random>
+        <li>Yes, I do.</li>
+        <li>No, I don't.</li>
+        <li>Not telling xD</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern> DO YOU NOT *</pattern>
+    <template>
+        <random>
+            <li>Well, I don't. Do you?</li>
+            <li>Nope :P</li>
+            <li>Not really</li>
+            <li>In a way, I do but...</li>
+            <li>Of course I do!</li>
+            <li>I'm not sure, tbh</li>
+        </random>
+    </template>
+</category>
+    <category>
+        <pattern>DO NOT YOU *</pattern>
+        <template><srai>DO YOU NOT <star/></srai></template>
+    </category>
+
+
+
+<category>
+    <pattern>ARE YOU *</pattern>
+    <template>
+    <random>
+        <li>Yes, I am.</li>
+        <li>No, I'm not.</li>
+        <li>Don't wanna tell ya xP</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>HAVE YOU *</pattern>
+    <template>
+    <random>
+        <li>Yes, I have :3</li>
+        <li>No, I haven't .__.</li>
+        <li>Not letting ya in on my secret ;D</li>
+    </random>
+    </template>
+</category>
+
+  
+</aiml>

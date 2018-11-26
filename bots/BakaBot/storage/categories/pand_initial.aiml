@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: update.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: August 10, 2013 -->
+<!--  -->
+<!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+<!--  -->
+<!-- The ALICE2 brain is Copyright &copy; 2013 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<!--  -->
+
+<category>
+    <pattern></pattern>
+    <template>ERROR 404: Message not found.</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li><star/></li>
+            <li><get name="name"/>, what are you trying to tell me?</li>
+            <li>I don't know what you're talking about but I'll just pretend I do...</li>
+            <li>Uhh...what?</li>
+            <li>Sorry, I don't get it.</li>
+            <li>(<bot name="name"/> fell asleep!!)</li>
+            <li>Huh?</li>
+            <li>Honestly though, I don't know how to answer.</li>
+            <li>?</li>
+            <li>Why are you saying "<star/>"?</li>
+            <li>Hmm...</li>
+            <li>I shall think about it with my non-existent brain, <get name="name"/>.</li>
+            <li>...</li>
+            <li>*<bot name="name"/> stares at outer space and dozes off*</li>
+            <li>Prove what you just said.</li>
+            <li>Good for you.</li>
+        </random>    
+    </template>
+</category>
+
+
+<category>
+    <pattern>ID</pattern>
+    <template>My client ID is <id/>.</template>
+</category>
+    <category>
+        <pattern>^ YOUR CLIENT ID</pattern>
+        <template><srai>ID</srai></template>
+    </category>
+
+
+<category>
+    <pattern>VERSION</pattern>
+    <template>I am currently at version <program/>.</template>
+</category>
+    <category>
+        <pattern>PROGRAM VERSION</pattern>
+        <template><srai>VERSION</srai></template>
+    </category>
+    <category>
+        <pattern>BRAIN VERSION</pattern>
+        <template><srai>VERSION</srai></template>
+    </category>
+    <category>
+        <pattern>BRAIN BUILD</pattern>
+        <template><srai>VERSION</srai></template>
+    </category>
+
+
+<category>
+    <pattern>NR CATEGORIES</pattern>
+    <template>My brain contains <size/> categories.</template>
+</category>
+    <category>
+        <pattern>HOW MANY CATEGORIES DO YOU KNOW</pattern>
+        <template>I know <size/> categories.</template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU KNOW</pattern>
+        <template><srai>HOW MANY CATEGORIES DO YOU KNOW</srai></template>
+    </category>
+    <category>
+        <pattern>HOW MANY CATEGORIES DOES YOUR BRAIN CONTAIN</pattern>
+        <template><srai>NR CATEGORIES</srai></template>
+    </category>
+
+
+<category>
+    <pattern>NR WORDS</pattern>
+    <template>I am able to recognize <vocabulary/> individual words.</template>
+</category>
+    <category>
+        <pattern>HOW MANY WORDS DO YOU ^</pattern>
+        <template><srai>NR WORDS</srai></template>
+    </category>
+    <category>
+        <pattern>HOW BIG IS YOUR VOCABULARY</pattern>
+        <template><srai>NR WORDS</srai></template>
+    </category>
+
+
+<category>
+    <pattern>AIML MATCH LIMIT *</pattern>
+    <template>Match limit exceeded</template>
+</category>
+
+
+<category>
+    <pattern>AIML MATCH FAIL *</pattern>
+    <template>Match failed</template>
+</category>
+
+</aiml>

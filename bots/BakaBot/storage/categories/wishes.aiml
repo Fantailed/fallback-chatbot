@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+
+
+<category>
+    <pattern>I WANT *</pattern>
+    <template>
+    <random>
+        <li>You may have <person><star/>.</person></li>
+        <li>Well,... I don't mind :P</li>
+        <li>Nevaaaar in my whole life >:3</li>
+        <li>Why would you want <person><star/></person>?!?!</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>I WANT TO *</pattern>
+    <template>
+    <random>
+        <li>You may <person><star/>.</person></li>
+        <li>Well,... I don't mind :P</li>
+        <li>Are you for real? That's disgusting, man.</li>
+        <li>Why would you want to <person><star/></person>?!?!</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>I WISH I HAD *</pattern>
+    <template>
+        <srai>I want <star/></srai>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ MAY I *</pattern>
+    <template>
+        <random>
+            <li>Sure, go ahead.</li>
+            <li>Why not</li>
+        </random>
+    </template>
+</category>
+
+
+<category>
+    <pattern>^ CAN I *</pattern>
+    <template>
+        <random>
+            <li>Of course you can.</li>
+            <li>You can, but ask yourself if you should first. Sounds a little fishy to me.</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ SHOULD I *</pattern>
+    <template>
+        <random>
+            <li>Am I really the person to ask this?</li>
+            <li>Why are you asking me, an internet stranger, such a question?</li>
+            <li>I think you should but what does MY opinion matter anyway?</li>
+            <li>If I were you, I wouldn't <star index="2"/>...</li>
+            <li>I'd advice you against it but I think you know better.</li>
+        </random>
+    </template>
+</category>
+
+
+</aiml>

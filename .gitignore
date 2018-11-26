@@ -1,0 +1,10 @@
+.idea/
+venv/
+
+*.log
+**/license.keys
+
+playground.py
+
+BakaBot/storage/conversations/
+BakaBot/storage/debug/

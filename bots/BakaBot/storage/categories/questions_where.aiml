@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+<category>
+    <pattern>WHERE ^</pattern>
+    <template>
+    <random>
+        <li>Nowhere xD</li>
+        <li>Somewhere :P</li>
+        <li>Everywhere :o</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ WHERE ^ THE NOT ^</pattern>
+    <that>^ ARE NOT ^</that>
+    <template>
+        <random>
+            <li>"Aren't" means "are not", right? So there you have your "not" ;3</li>
+            <li>It's inside the "aren't" that I just said.</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>^ WHERE ^ THE NOT ^</pattern>
+    <that>^ IS NOT ^</that>
+    <template>
+        <random>
+            <li>"Isn't" means "is not", right? So there you have your "not" ;3</li>
+            <li>It's inside the "isn't" that I just said.</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>^ WHERE ^ THE NOT ^</pattern>
+    <that>^ WAS NOT ^</that>
+    <template>
+        <random>
+            <li>"Wasn't" means "was not", right? So there you have your "not" ;3</li>
+            <li>It's inside the "wasn't" that I just said.</li>
+        </random>
+    </template>
+</category>
+
+
+  
+</aiml>

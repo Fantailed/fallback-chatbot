@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+<category>
+    <pattern>^ YOUR OPINION ON ^</pattern>
+    <template>
+    <random>
+        <li>I don't know much about this topic so I am not sure what to say.<br/>How about you ask someone else?</li>
+        <li>I don't have any thoughts in particular. Guess I'll just stay neutral, sry ;P</li>
+        <li>Sorry, I really don't know how to evaluate this. Ask someone else.</li>
+    </random>
+    </template>
+</category>
+
+    <category>
+        <pattern>^ WHAT DO YOU THINK ^</pattern>
+        <template><srai><star/> YOUR OPINION ON <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HOW DO YOU FIND ^</pattern>
+        <template><srai><star/> YOUR OPINION ON <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ WHAT ARE YOUR THOUGHTS ^</pattern>
+        <template><srai><star/> YOUR OPINION ON <star index="2"/></srai></template>
+    </category>
+
+
+
+<category>
+    <pattern>* IS <set>badfeelings</set></pattern>
+    <template>
+        <random>
+            <li>Sorry to hear that man</li>
+            <li>Ohh I know that feel</li>
+            <li>Damn, I feel for ya.</li>
+            <li>Why is that?</li>
+        </random>
+    </template>
+</category>    
+</aiml>

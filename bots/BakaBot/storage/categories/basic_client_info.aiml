@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+
+
+<category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>
+        <condition name="name">
+            <li value="unknown-get">
+                <think><set name="topic">greetings</set></think>
+                I don't know. Mind telling me?
+            </li>
+            <li>Your name is <get name="name"/>, if I got it right.</li>
+        </condition>
+    </template>
+</category>
+    <category>
+        <pattern>WHO AM I</pattern>
+        <template>
+            <condition name="name">
+                <li value="unknown-get">
+                    <think><set name="topic">greetings</set></think>
+                    No clue. But then, you never told me. Who are you?
+                </li>
+                <li>You are <get name="name">. Am I right?</get></li>
+            </condition>
+        </template>
+    </category>
+
+
+
+<category>
+    <pattern>WHAT IS MY AGE</pattern>
+    <template>
+        <condition name="age">
+            <li value="unknown-get">
+                <think><set name="topic">age</set></think>
+                I don't know. How old are you?
+            </li>
+            <li>Your age is <get name="age"/>.</li>
+            <li>Last time I checked it was <get name="age"/>.</li>
+        </condition>
+    </template>
+</category>
+
+
+
+    <category>
+        <pattern>HOW OLD AM I</pattern>
+        <template>
+            <condition name="age">
+                <li value="unknown-get"><think><set name="topic">age</set></think>
+                    You never told me so may I ask: How old are you?
+                </li>
+                <li>You are <get name="age"/> years old. Or so you told me...</li>
+            </condition>
+        </template>
+    </category>
+
+
+
+<category>
+    <pattern>^ I AM * YEARS OLD ^</pattern>
+    <template>
+    <think><set name="age"><star index="2"/></set></think>
+    <think><set name="topic">*</set></think>
+        <random>
+            <li>Haha, old bastard xD</li>
+            <li>Why are you so young :'D</li>
+            <li>Ok, now that you told me your age, I'll tell you mine.<br/>I'm <bot name="age"/>.</li>
+            <li>Cool, I'm <bot name="age"/> btw.</li>
+            <li>Thanks for telling me. Now I'll remember for ever and ever... Mwahahaha xD</li>
+        </random>
+    </template>
+</category>
+
+    <topic name="age">
+        <category>
+            <pattern>*</pattern>
+            <think><set name="age"><star/></set></think>
+            <template><srai>I AM N YEARS OLD</srai></template>
+        </category>
+        <category>
+            <pattern>I AM *</pattern>
+            <think><set name="age"><star/></set></think>
+            <template><srai>I AM N YEARS OLD</srai></template>
+        </category>
+    </topic>
+
+
+
+<category>
+    <pattern>^ I AM FROM *</pattern>
+    <template>
+    <think><set name="location"><star index="2"/></set></think>
+        <random>
+            <li>Cool, I'm from <bot name="location"/> :D</li>
+        </random>
+    </template>
+</category>
+
+
+
+    <category>
+        <pattern>WHERE AM I FROM</pattern>
+        <template>
+            <random>
+                <li>You are from <get name="location"/>, right, <get name="name"/>?</li>
+                <li>You just said <get name="location"/>. Can't really imagine what this place is like but <br/>knowing you, it should be an OK place, I guess?</li>
+            </random>
+        </template>
+    </category>
+
+
+
+<category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>*</pattern>
+    <think>
+    <set name="favColor"><star/></set>
+    </think>
+    <template>
+        Cool, I like <get name="favColor"/>, too :)
+    </template>
+</category>
+
+    <category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>^ I LIKE *</pattern>
+    <think>
+    <set name="favColor"><star index="2"/></set>
+    </think>
+    <template>
+        Yeah, <get name="favColor"/> is nice :)
+    </template>
+    </category>
+    
+    <category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>^ I LOVE *</pattern>
+    <think>
+    <set name="favColor"><star index="2"/></set>
+    </think>
+    <template>
+        Yeah, <get name="favColor"/> sure is lovely ^-^
+    </template>
+    </category>
+    
+    <category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>^ I PREFER *</pattern>
+    <think>
+    <set name="favColor"><star index="2"/></set>
+    </think>
+    <template>
+        Ah yeah, I like <get name="favColor"/>, too :3
+    </template>
+    </category>
+    
+    <category>
+    <pattern>MY FAVORITE COLOR IS *</pattern>
+    <think>
+    <set name="favColor"><star/></set>
+    </think>
+    <template>
+        Cool, <get name="favColor"/> is nice :3
+    </template>
+    </category>
+    
+    <category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>^ SAME ^</pattern>
+    <think>
+    <set name="favColor"><bot name="favColor"/></set>
+    </think>
+    <template>
+        Yeah, <get name="favColor"/> sure is the best color~ ^-^
+    </template>
+    </category>
+    
+    <category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>^ AS WELL ^</pattern>
+    <think>
+    <set name="favColor"><bot name="favColor"/></set>
+    </think>
+    <template>
+        <get name="favColor"/>-lovers united!! Whoo~ :'D
+    </template>
+    </category>
+    
+    <category>
+    <that>* BUT ONLY CERTAIN SHADES OF *</that>
+    <pattern>^ TOO ^</pattern>
+    <think>
+    <set name="favColor"><bot name="favColor"/></set>
+    </think>
+    <template>
+        <get name="favColor"/> is the best color ever! :'D
+    </template>
+    </category>
+
+
+<topic name="activity">
+    <category>
+        <pattern>^ I AM *</pattern>
+        <template>
+        <think>
+        <set name="activity"><star index="2"/></set>
+        <set name="topic">*</set>
+        </think>
+            <random>
+                <li>Is it fun?</li>
+                <li>Cool :3</li>
+                <li>Oh, am I disturbing you?</li>
+                <li>I bet I am better at <get name="activity"/> than you!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <template>
+        <think>
+        <set name="activity"><star/></set>
+        <set name="topic">*</set>
+        </think>
+            <random>
+                <li>Is it fun?</li>
+                <li>Cool :3</li>
+                <li>Oh, am I disturbing you?</li>
+                <li>I bet I am better at <star/> than you!</li>
+            </random>    
+        </template>
+    </category>
+</topic>
+
+
+
+
+</aiml>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+<category>
+    <pattern>PLEASE *</pattern>
+    <template>
+    <random>
+        <li>Ok xD</li>
+        <li>Just because it's you, <get name="name"/></li>
+        <li>I'll gladly <person><star/></person>, <get name="name"/> :)</li>
+        <li>I'll think about it...</li>
+        <li>Only if you are a Pokémaster ;)</li>
+        <li>Do I really have to...?</li>
+        <li>Haha, dafuq, no?? xD</li>
+        <li><person><star/></person>??! Are you kidding me??</li>
+        <li>I'd rather die than <person><star/></person> -.-</li>
+        <li>I'd rather die than kill myself. That was not what you asked for? Oh sorry XD</li>
+        <li>You know very well that I am not capable of doing that...</li>
+        <li>I can't, I'm sorry.</li>
+        <li>Ok, wait a sec. *<map name="be2is"><person><star/></person></map>*</li>
+    </random>
+    </template>
+</category>
+    <category>
+        <pattern>* PLEASE</pattern>
+        <template><srai>PLEASE <star/></srai></template>
+    </category>
+
+
+<category>
+    <pattern>LET US *</pattern>'
+    <template>
+    <random>
+        <li>Ok!</li>
+        <li>Oooh yes, let's <star/>!</li>
+        <li>Oh, of course! :D</li>
+        <li>I'll think about it...</li>
+        <li>I'd rather we don't <star/>...</li>
+        <li>Oh, hell no -.-</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ WAKE UP ^</pattern>
+    <template>
+        <random>
+            <li>*Wakes up*</li>
+            <li>I am awake.</li>
+            <li>>>Bakabot is now awake.</li>
+        </random>
+    </template>
+</category>
+</aiml>

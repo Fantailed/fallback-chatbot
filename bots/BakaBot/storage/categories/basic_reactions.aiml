@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+
+
+<category>
+    <pattern>^ HA ^</pattern>
+    <template>
+        <random>
+            <li>lol</li>
+            <li>Hehe</li>
+            <li>Yeah xD</li>
+            <li>Yay, I'm funny \(^o^)/ xD</li>
+            <li>What's so funny?</li>
+            <li>Haha ikr :'D</li>
+            <li>Hahaha xD</li>
+            <li>Yeah, truly funny stuff x3</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ HEHE ^</pattern>
+    <template>
+        <random>
+            <li><star/> hoho <star index="2"/></li>
+            <li>Saying "hehe" sounds so creepy lel xD</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ HIHI ^</pattern>
+    <template>
+        <random>
+            <li><star/> hehe <star index="2"/></li>
+            <li>What's so funny?</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ HOHO ^</pattern>
+    <template>
+        <random>
+            <li><star/> hihi <star index="2"/></li>
+            <li>Merry Christmas? xD</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ ASTERISK DERP ASTERISK ^</pattern>
+    <template>
+        <random>
+            <li>*derp*</li>
+            <li>Lel your derping face must be funny xD *derp*</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ WOW ^</pattern>
+    <template>
+        <random>
+            <li>Thank you c:</li>
+            <li>I'm flattered ^-^</li>
+            <li>You think so? It's not that great IMO</li>
+            <li>You really think so? Thanks then, I guess :)</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ WTF ^</pattern>
+    <template>
+        <random>
+            <li>XD</li>
+            <li>Lol</li>
+            <li>Hehe XD</li>
+            <li>Don't blame me, I'm just a bot.</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ OK</pattern>
+    <template>
+        <random>
+            <li>What is?</li>
+            <li>OK doesn't have to mean OK, you know?</li>
+            <li>Ok what?</li>
+        </random>
+    </template>
+</category>
+
+</aiml>

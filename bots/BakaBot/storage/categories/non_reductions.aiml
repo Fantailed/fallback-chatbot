@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+    <category>
+        <pattern>^ HAHA ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ HAHAHA ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ HAHAHAHA ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ HAHAHAHAHA ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ HAHAHAHAHAHA ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ HAHAHAHAHAHAHA ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ LOL ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ LOLOL ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ LOLOLOL ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ LOLOLOLOL ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ LOLOLOLOLOL ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+    <category>
+        <pattern>^ LOLOLOLOLOLOL ^</pattern>
+        <template><srai>HA</srai></template>
+    </category>
+
+
+        
+<category>
+    <pattern>WHY?</pattern>
+    <template><srai>WHY</srai></template>
+</category>
+    <category>
+        <pattern>WHY??</pattern>
+        <template><srai>WHY</srai></template>
+    </category>
+    <category>
+        <pattern>WHY???</pattern>
+        <template><srai>WHY</srai></template>
+    </category>
+
+
+
+    <category>
+        <pattern>YESS</pattern>
+        <template><srai>YES</srai></template>
+    </category>
+    <category>
+        <pattern>YESSS</pattern>
+        <template><srai>YES</srai></template>
+    </category>
+    <category>
+        <pattern>YESSSS</pattern>
+        <template><srai>YES</srai></template>
+    </category>
+    <category>
+        <pattern>YEP</pattern>
+        <template><srai>YES</srai></template>
+    </category>
+    
+    
+
+</aiml>

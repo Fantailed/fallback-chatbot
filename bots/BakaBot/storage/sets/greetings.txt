@@ -1,0 +1,4 @@
+hello
+hey
+hi
+howdy

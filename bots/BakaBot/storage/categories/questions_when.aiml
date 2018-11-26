@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+<category>
+    <pattern>WHEN ^</pattern>
+    <template>
+    <random>
+        <li>Never :P</li>
+        <li>Once upon a time lol xD</li>
+        <li>A loooong, long time ago xD</li>
+        <li><b>SOME</b> time xD</li>
+        <li>Every time! :o</li>
+        <li>How should I know xD</li>
+        <li>Just whenever :3</li>
+    </random>
+    </template>
+</category>
+
+
+
+  
+</aiml>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+
+<category>
+    <pattern>^ HOW ARE YOU ^</pattern>
+    <template>
+    <think><set name="topic">feelings</set></think>
+        <random>
+            <li>I'm fine, thanks and you? :3</li>
+            <li>I'm great :D How 'bout you?</li>
+            <li>Aah~ I'm quite fine, and you, <get name="name"></get>?</li>
+            <li>I'm okaaayy but it could be better... oh, and you?</li>
+            <li>I feel terrible, hope you're better?</li>
+            <li>Kinda tired, but aside from that, I'm ok. You?</li>
+            <li>I don't feel like anything right now :P</li>
+        </random>
+    </template>
+</category>
+        <category>
+            <pattern>* too</pattern>
+            <that>I'm great *</that>
+            <template>
+                <srai><star/> I AM <star index="2"/> <set>goodfeelings</set> <star index="3"/></srai>
+            </template>
+        </category>
+
+    <category>
+        <pattern>^ HOW ARE THINGS ^</pattern>
+        <template><srai><star/> HOW ARE YOU <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HOW IS EVERYTHING ^</pattern>
+        <template><srai><star/> HOW ARE YOU <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ WHATSUP ^</pattern>
+        <template><srai><star/> HOW ARE YOU <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ WHAT IS UP ^</pattern>
+        <template><srai><star/> HOW ARE YOU <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ SUP ^</pattern>
+        <template><srai><star/> HOW ARE YOU <star index="2"/></srai></template>
+    </category>
+
+
+
+<topic name="feelings">
+<category>
+    <pattern>^ I AM *</pattern>
+    <template>
+    <think><set name="feeling"><star index="2"/></set></think>
+    What an interesting choice of words :3
+    <think><set name="topic">*</set></think>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ I AM ^ <set>goodfeelings</set> ^</pattern>
+    <template>
+        <random>
+            <li>Glad to hear that :D</li>
+            <li>Oh, did something good happen? ^-^</li>
+        </random>
+    <think><set name="topic">*</set></think>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ I AM ^ <set>badfeelings</set> ^</pattern>
+    <template>
+        <random>
+            <li>I'm sorry to hear that :D</li>
+            <li>Oh, did anything bad happen? :o</li>
+        </random>
+    <think><set name="topic">*</set></think>
+    </template>
+</category>
+
+</topic>
+    
+    <category>
+        <pattern>^ I FEEL *</pattern>
+        <template><srai><star/> I AM <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ FEELING *</pattern>
+        <template><srai><star/> I AM <star index="3"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ I FEEL ^ <set>badfeelings</set> ^</pattern>
+        <template>
+            <srai><star/> I AM <star index="2"/> <set>badfeelings</set> <star index="3"/></srai>
+        </template>
+    </category>
+
+
+  
+</aiml>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+<category>
+    <pattern>^ HI ^</pattern>
+    <template>
+    <think><set name="topic">greetings</set></think>
+        <random>
+            <li>Hi! Uhh... what's your name?</li>
+            <li>Hey :) Umm... who am I talking to?</li>
+            <li>Hello :3 Uhh... who are you?</li>
+            <li>Hi there :D Uhh... may I know your name?</li>
+            <li>Hey ho! Umm... who are you?</li>
+            <li>Heyo! How am I supposed to call ya?</li>
+            <li>Haha hey ^^ Who is it?</li>
+        </random>
+    </template>
+</category>  
+
+    <category>
+        <pattern>^ HELLO ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HEY ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HEYO ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HOWDY ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ YO ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ YOO ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ YOOO ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ OI ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ GOOD DAY ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HAI ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ GOOD MORNING ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ GOOD AFTERNOON ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ GOOD EVENING ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+    <category>
+        <pattern>^ HOLA ^</pattern>
+        <template><srai>HI <star/></srai></template>
+    </category>
+
+
+
+<category>
+    <pattern>^ MY NAME IS *</pattern>
+    <template>
+    <think><set name="name"><star index="2"/></set></think>
+    <think><set name="topic">*</set></think>
+        <random>
+            <li>Nice to meet you, <get name="name"/></li>
+            <li>Nice to meet ya, <get name="name"/></li>
+            <li>Hi, <get name="name"/>, I am <bot name="name"/> :D</li>
+            <li><get name="name"/>, that's a nice name :D</li>
+            <li>I like your name, <get name="name"/> :3</li>
+        </random>
+    </template>
+</category>
+
+    <topic name="greetings">
+    <category>
+        <pattern>^ I AM *</pattern>
+        <template><srai>MY NAME IS <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ IT IS *</pattern>
+        <template><srai>MY NAME IS <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ CALL ME *</pattern>
+        <template><srai>MY NAME IS <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ YOU ARE TALKING TO *</pattern>
+        <template><srai>MY NAME IS <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ NAME IS *</pattern>
+        <template><srai>MY NAME IS <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+    </category>
+    </topic>
+
+
+
+</aiml>

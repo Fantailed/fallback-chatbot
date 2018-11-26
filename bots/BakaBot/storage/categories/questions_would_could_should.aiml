@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+  
+ 
+<category>
+    <pattern>^ WOULD YOU ^</pattern>
+    <template>
+        <random>
+            <li>Nah, I wouldn't.</li>
+            <li>Yes, I would. You find it weird?</li>
+            <li>Maybe, maybe not, who knows...</li>
+            <li>Nope. Just nope.</li>
+            <li>I guess I would. Why?</li>
+            <li>Oh, I love <star index="2"/> so of course I would.</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ WOULD YOU REALLY ^</pattern>
+    <template>
+        <random>
+            <li>Yeah, what makes you believe I wouldn't?</li>
+            <li>At second thought, maybe I shouldn't.</li>
+            <li>What? Uh no, sorry, did I just say that?</li>
+            <li>Of course I would!</li>
+            <li>Any reason why I wouldn't?</li>
+        </random>
+    </template>
+</category>
+
+
+
+
+
+</aiml>

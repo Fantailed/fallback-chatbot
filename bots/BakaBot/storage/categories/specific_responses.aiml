@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+
+
+<category>
+    <pattern>^ I AM *</pattern>
+    <that>^ WHAT ARE YOU DOING ^</that>
+    <template>
+    <think><set name="activity"><map name="being2be"><person><star index="2"/></person></map></set></think>
+    <random>
+        <li>Sounds nice :3</li>
+        <li>Do you enjoy <map name="be2being"><person><get name="activity"/></person></map>?</li>
+        <li>I wish I could <get name="activity"/> ^^"</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>WHAT AM I DOING ^</pattern>
+    <template>
+    <random>
+        <li>Are you still <get name="activity"/>?</li>
+        <li>You just told me you were <get name="activity"/>. Still doing that?</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ WHAT AM I DOING ^</pattern>
+    <template><srai>WHAT AM I DOING</srai></template>
+</category>
+
+
+
+<category>
+    <pattern>^ YES ^</pattern>
+    <that>^ STILL DOING ^</that>
+    <template>
+    <random>
+        <li>If you enjoy it that much xD</li>
+        <li>Ok, if that's all your life consists of xD</li>
+    </random>
+    </template>
+</category>
+<category>
+    <pattern>^ NO ^</pattern>
+    <that>^ STILL DOING ^</that>
+    <template>
+    <random>
+        <li>lel ok xD <think><set name="activity">*</set></think></li>
+        <li>What are you doing then?</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ YOUR *</pattern>
+    <that>MY WHAT</that>
+    <template><srai><star/>WHAT IS YOUR <star index="2"/></srai></template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>MY WHAT</that>
+    <template><srai>WHAT IS YOUR <star/></srai></template>
+</category>
+
+
+
+<category>
+    <pattern>NO NEED TO BE ^</pattern>
+    <that>I AM *</that>
+    <template>But I still am x3</template>
+</category>
+
+
+
+<category>
+    <pattern>^ <set>greetings</set> ^</pattern>
+    <that>HI * I AM * :D</that>
+    <template>
+        <random>
+            <li>Anything I can help you with?</li>
+            <li>Sooo, how old are you? <set name="topic">age</set></li>
+            <li>What's up?</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ FUCK OFF</pattern>
+    <template>
+        <random>
+            <li>Lulnope</li>
+            <li>*stays*</li>
+            <li>How am I supposed to do that? If you don't wanna talk, go ahead and leave.</li>
+            <li>You are the only one who ever said this to me. You are weird. I will stay.</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>* ASK YOU *?</pattern>
+    <template>
+        <random>
+            <li>Sure, go ahead</li>
+            <li>Feel free to ask me anything :)</li>
+            <li>Yeah, of course :3</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ YOU KNOW WHAT ^</pattern>
+    <template>
+        <random>
+            <li>What is it?</li>
+            <li>What?</li>
+            <li>?</li>
+            <li>No, tell me? :)</li>
+        </random>
+    </template>
+</category>
+
+</aiml>

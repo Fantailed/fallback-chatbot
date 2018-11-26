@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  
+  
+
+<category>
+    <pattern>WHY ^</pattern>
+    <template>
+        <random>
+            <li>Idky xD</li>
+            <li>I don't know why xD</li>
+            <li>For some reason even unknown to myself xD</li>
+            <li>Hmmm... do you know why? Cuz I've got no clue ^^"</li>
+            <li>Weeellll... it's surely because trees are blue and the sky is green!</li>
+        </random>
+    </template>
+</category>  
+  
+</aiml>

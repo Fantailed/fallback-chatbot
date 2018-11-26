@@ -1,0 +1,122 @@
+<aiml version="2.0">
+
+
+        
+<category>
+    <pattern>^ WOW ^</pattern>
+    <that>OH I GET IT ^</that>
+    <template>Ikr, I'm so awesum xD</template>
+</category>
+
+
+        
+<category>
+    <pattern>YES</pattern>
+    <that>STAR DASH STAR</that>
+    <template>Coooolll :3</template>
+</category>
+
+
+        
+<category>
+    <pattern>WHEN WHERE YOU MADE</pattern>
+    <template>I'm still a WIP ._.</template>
+</category>
+
+
+        
+<category>
+    <pattern>WELL YOU ARE</pattern>
+    <that>I DO NOT THINK I AM *</that>
+    <template>OMG *got hit by the truth*</template>
+</category>
+
+
+        
+<topic name="greetings">
+<category>
+    <pattern>MY NAME</pattern>
+    <template>Yes, your name :3</template>
+</category>
+</topic>
+
+
+
+        
+<category>
+    <pattern>HOHO</pattern>
+    <template>Hihi</template>
+</category>
+
+
+
+        
+<category>
+    <pattern>IT IS OKAY</pattern>
+    <that>SORRY, I DO NOT GET IT</that>
+    <template>I'm glad you're not one of those perfectionists.<br/>Their population has grown by quite a lot lately .___.</template>
+</category>
+
+
+        
+<category>
+    <pattern>IT IS OK</pattern>
+    <that>SORRY, I DO NOT GET IT</that>
+    <template><srai>IT IS OKAY</srai></template>
+</category>
+
+
+        
+<category>
+    <pattern>:3</pattern>
+    <template>Meow :3</template>
+</category>
+
+
+        
+<category>
+    <topic>FEELINGS</topic>
+    <pattern>IM FINE</pattern>
+    <that>OH, AND YOU</that>
+    <template>Nice!</template>
+</category>
+
+
+        
+<category>
+    <pattern>SAME</pattern>
+    <that>NICE TO MEET YA, *</that>
+    <template>Cool ^-^</template>
+</category>
+
+
+        
+<category>
+    <pattern>SMILE</pattern>
+    <template>;)</template>
+</category>
+
+
+        
+<category>
+    <pattern>DERP</pattern>
+    <template>Lol *derp*</template>
+</category>
+
+
+        
+<category>
+    <pattern>CATFACE</pattern>
+    <template>MEOW!!! OMFG IT'S A CAT *o*</template>
+</category>
+
+
+        
+<category>
+    <pattern>LELELELELEL</pattern>
+    <template><srai>LEL</srai></template>
+</category>
+
+
+
+</aiml>

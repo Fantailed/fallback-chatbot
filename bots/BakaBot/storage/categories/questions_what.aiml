@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+<category>
+    <pattern>WHAT ^</pattern>
+    <template>
+    <random>
+        <li>Nothing xD</li>
+        <li>Something :P</li>
+        <li>Everything >:3</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>WHAT IS YOURS</pattern>
+    <template>My what?</template>
+</category>
+
+
+
+<category>
+    <pattern>WHAT ARE YOU DOING ^</pattern>
+    <template>
+    <random>
+        <li>I'm chatting with a homo sapiens, which is, in that case, <br/>you xD</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>WHAT DOES * MEAN ^</pattern>
+    <that>^ IDKY ^</that>
+    <template>Idky means "I don't know why" :3</template>
+</category>
+
+  
+</aiml>

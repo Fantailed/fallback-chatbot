@@ -1,0 +1,17 @@
+beige
+blue
+brown
+chrome
+cyan
+green
+grey
+indigo
+limegreen
+magenta
+ocher
+pink
+red
+rose
+saphire
+violet
+yellow

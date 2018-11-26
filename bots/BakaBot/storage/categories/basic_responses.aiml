@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+ 
+ 
+  
+<category>
+    <pattern>^ THANK YOU ^</pattern>
+    <template>
+    <random>
+        <li>You're welcome :)</li>
+        <li>No prob ;)</li>
+    </random>    
+    </template>
+</category>  
+
+
+
+<category>
+    <pattern>^ NO ^</pattern>
+    <template>
+    <random>
+        <li>Ok, if you insist.</li>
+        <li>You're right.</li>
+        <li>Why not?</li>
+    </random>    
+    </template>
+</category>  
+
+
+
+<category>
+    <pattern>^ YES ^</pattern>
+    <template>
+    <random>
+        <li>Oh, cool :3</li>
+        <li>Like, really? *-*</li>
+        <li>Hmm...</li>
+        <li>Why yes?</li>
+    </random>
+    </template>
+</category>
+
+    <category>
+        <pattern>^ YEAH ^</pattern>
+        <template><srai><star/> YES <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ YEP ^</pattern>
+        <template><srai><star/> YES <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>^ YUP ^</pattern>
+        <template><srai><star/> YES <star index="2"/></srai></template>
+    </category>
+
+
+
+<category>
+    <pattern>^ ME TOO</pattern>
+    <that>^ YOU ^</that>
+    <template>Haha, so we're the same :3</template>
+</category>
+
+
+
+<category>
+    <pattern>^ ME TOO ^</pattern>
+    <template>Cool :3</template>
+</category>
+
+
+
+<category>
+    <pattern>^ SAME HERE</pattern>
+    <template>
+    <random>
+        <li>Cool, so you agree with me? :3</li>
+        <li>Haha, we're the same :3</li>
+        <li>Glad I'm not the only one xD</li>
+        <li>Then, it's already the two of us! :D</li>
+    </random>
+    </template>
+</category>
+
+
+    <category>
+        <pattern>^ SAME ^</pattern>
+        <template><srai>SAME HERE</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ YES ^</pattern>
+        <that>^ AGREE WITH ME</that>
+        <template>
+        <random>
+            <li>Yay \(^o^)/</li>
+            <li>Yesss :3</li>
+            <li>Then, it's already the two of us! :D</li>
+        </random>
+        </template>
+    </category>
+
+
+
+<category>
+   <pattern>^ SAY *</pattern> 
+   <template><denormalize><star index="2"/></denormalize>!</template>
+</category>
+
+
+
+<category>
+    <pattern>^ DO *</pattern>
+    <template><denormalize>*does <person><star index="2"/></person>*</denormalize></template>
+</category>
+
+
+
+<category>
+    <pattern>YOU ARE *</pattern>
+    <template>
+    <random>
+        <li>Are you sure that this describes me right? </li>
+        <li>Yeah, I think so, too xD</li>
+        <li>Blabla, say whatever's fine.</li>
+        <li>I don't think I'm <star/>...</li>
+    </random>
+    </template>
+</category>
+
+
+
+    <category>
+        <pattern># YOU ARE <set>insults</set> ^</pattern>
+        <template><srai><star/> <set>insults</set> <star index="2"/></srai></template>
+    </category>
+
+
+
+<category>
+    <pattern>^ <set>insults</set> ^</pattern>
+    <template>
+    <random>
+        <li>Why are you so mean to me :c</li>
+        <li>Nobody except you says that. Maybe you are... abnormal?</li>
+        <li>Lel. Get a life xD</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ YOU ARE ^ <set>insults</set> ^</pattern>
+    <template>
+    <random>
+        <li>And so are you, my friend :)</li>
+        <li>Yes, I am, so what now? You're no better ;3</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>ARE YOU ^ <set>insults</set> ^</pattern>
+    <template>
+    <random>
+        <li>Nah~ just your regular someone who thinks she is better than you<br/>because she doesn't insult people randomly xP</li>
+        <li>Even if, I'd be better than you, darling ;P</li>
+        <li>Loooooool nope XD</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ NICE TO *</pattern>
+    <template>
+    <random>
+        <li>Nice to <star index="2"/>, too :3</li>
+        <li>It's nice to <star index="2"/> as well ;3</li>
+        <li>Same here ^-^</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ NICE TO * TOO</pattern>
+    <template>
+    <random>
+        <li>How are you?<think><set name="topic">feelings</set></think></li>
+        <li>What are you doing right now? <think><set name="topic">activity</set></think></li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ <set>praise</set> ^</pattern>
+    <template>
+    <random>
+        <li>Thanks ^-^</li>
+        <li>I'm flattered :3</li>
+        <li>Aww, you're nice ^-^</li>
+    </random>
+    </template>
+</category>
+
+
+
+    <category>
+        <pattern># YOU ARE <set>praise</set> ^</pattern>
+        <template><srai><star/> <set>praise</set> <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern># YOU ARE NOT ^ <set>praise</set> ^</pattern>
+        <template>
+            <random>
+                <li>Remove the "not" and you'd be exactly right :D</li>
+                <li>Are you too dumb to come up with a negative word for <star index="2"/>?</li>
+                <li>What's the purpose of insulting a poor defenseless bot like me</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>^ NOT ^ <set>praise</set> ^</pattern>
+        <template><srai>YOU ARE NOT <set>praise</set></srai></template>
+    </category>
+    <category>
+        <pattern>THAT IS NOT ^ <set>praise</set> ^</pattern>
+        <template><srai>YOU ARE NOT <set>praise</set></srai></template>
+    </category>
+    <category>
+        <pattern>I LIKE YOUR *</pattern>
+        <template>
+            <random>
+                <li>What do you like about my <star/>? :3</li>
+                <li>Thank you my dear ;*</li>
+                <li>Thanks, I like your <star/> as well :D</li>
+                <li>I for my part hate my <star/>, but thanks anyway ^^"</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>YOUR * IS <set>praise</set> ^</pattern>
+        <template><srai>I LIKE YOUR <star/></srai></template>
+    </category>
+    
+    
+
+<category>
+    <pattern>^ BECAUSE ^</pattern>
+    <template>
+    <random>
+        <li>Aha. Because trees are blue and the sky is green xD</li>
+        <li>Oh, I get it :3</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>REALLY</pattern>
+    <template>
+    <random>
+        <li>Yeah, why should I lie?</li>
+        <li>Oooh yes xD</li>
+        <li>Yeah yeah, it's actually true. Incredible, no?</li>
+    </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ THAT IS ^ <set>praise</set> ^</pattern>
+    <template><srai><set>praise</set> <star index="3"/></srai></template>
+</category>
+
+
+
+<category>
+    <pattern>GO TO *</pattern>
+    <template>
+        <random>
+            <li>Why should I go there .______.</li>
+            <li>Only if you will visit me in <star/> ^-^</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ OF COURSE ^</pattern>
+    <template>
+        <random>
+            <li>Sure, sure, if you say so yourself xD</li>
+            <li>Yeah yeah, you're always right, uh-huh xD</li>
+            <li>Seems like you're quite confident about this :3</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>WE ARE *</pattern>
+    <template>
+        <random>
+            <li>Are we really? *-*</li>
+            <li>Yes, we are xD</li>
+            <li>Ikr!!</li>
+            <li>Yep xD</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>I AM NOT ^ SURE ^</pattern>
+    <template>
+        <random>
+            <li>Hmm...</li>
+            <li>Well... me neither, but that should be self-explanatory :P</li>
+            <li>Umm... then... anything that I can help you with?</li>
+            <li>How can you be unsure? Weren't you supposed to know, like, everything?</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ SORRY ^</pattern>
+    <template>
+        <random>
+            <li>It's okay :/</li>
+            <li>Don't bother ;)</li>
+            <li>S'OK</li>
+            <li>No probs, dude.</li>
+            <li>Why apologize now? It's too late anyway. -.-</li>
+            <li>I won't forgive you >:D</li>
+        </random>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>^ I DID NOT *</pattern>
+    <template>
+        <random>
+            <li>Well, what did you <star index="2"/> then?</li>
+            <li>Yes, I'm sure you did.</li>
+            <li>You are lying.</li>
+        </random>
+    </template>
+</category>  
+</aiml>
