@@ -24,7 +24,7 @@
                     <think><set name="topic">greetings</set></think>
                     No clue. But then, you never told me. Who are you?
                 </li>
-                <li>You are <get name="name">. Am I right?</get></li>
+                <li>You are <get name="name"/>. Am I right?</li>
             </condition>
         </template>
     </category>

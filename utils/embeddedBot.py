@@ -13,7 +13,7 @@ sys.path.append('venv/Lib/site-packages/MetOffer-1.3.2.dist-info')
 class EmbeddedBot(ConsoleBotClient):
 
     def __init__(self, config_filename):
-        os.chdir('../BakaBot/config/windows')
+        os.chdir('../bots/BakaBot/config/windows')
 
         sys.argv = ['playground.py', '--config', 'config.yaml',
                     '--cformat', 'yaml', '--logging', 'logging.yaml']

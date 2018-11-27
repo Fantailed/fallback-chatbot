@@ -19,7 +19,7 @@ class FallbackChatbot(FallbackSkill):
     def __init__(self):
         super(FallbackChatbot, self).__init__(name="FallbackChatbot")
         # Initialize inner bot object
-        self.aiml_bot = EmbeddedBot('../BakaBot/config/windows/config.yaml')
+        self.aiml_bot = EmbeddedBot('bot/BakaBot/config/windows/config.yaml')
         self.client_context = self.aiml_bot.create_client_context("mycroft")
 
     def initialize(self):
