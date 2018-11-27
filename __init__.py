@@ -34,7 +34,8 @@ class FallbackChatbot(FallbackSkill):
         return response
 
     def handle_fallback(self, message):
-        if self.settings.get("enabled") == 'true':
+        print(self.settings.get("enabled"))
+        if self.settings.get("enabled") == 'true' or None:
             utterance = message.data.get("utterance")
             answer = self.ask_brain(utterance)
             if answer != "":
@@ -43,8 +44,7 @@ class FallbackChatbot(FallbackSkill):
                     asked_question = True
                 self.speak(answer, expect_response=asked_question)
                 return True
-        self.speak("Default answer", expect_response=False)
-        return True
+        return False
 
     def shutdown(self):
         self.debug.close()
