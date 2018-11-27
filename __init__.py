@@ -21,7 +21,7 @@ class FallbackChatbot(FallbackSkill):
         # Initialize inner bot object
         self.aiml_bot = EmbeddedBot('config.yaml')
         self.client_context = self.aiml_bot.create_client_context("mycroft")
-        self.debug = open('debug_output.txt', 'w')
+        self.debug = open('debug_output.txt', 'a')
 
     def initialize(self):
         # 0 is high priority, 100 is low
@@ -43,7 +43,8 @@ class FallbackChatbot(FallbackSkill):
                     asked_question = True
                 self.speak(answer, expect_response=asked_question)
                 return True
-        return False
+        self.speak("Default answer", expect_response=False)
+        return True
 
     def shutdown(self):
         self.debug.close()
