@@ -1,4 +1,4 @@
 {
   "utterance": "My name is Conny",
-  "expected_response": "(Nice to meet you, Conny)|(Nice to meet ya, Conny)|(Hi, Conny, i'm*:D)|(Conny, that's a nice name :D)|(I like your name, Conny :3)"
+  "expected_response": "(Nice to meet you, Conny)|(Nice to meet ya, Conny)|(Hi, Conny, i'm *)|(Conny, that's a nice name :D)|(I like your name, Conny :3)"
 }
