@@ -6,5 +6,5 @@ venv/
 
 playground.py
 
-BakaBot/storage/conversations/
-BakaBot/storage/debug/
+bots/BakaBot/storage/conversations/
+bots/BakaBot/storage/debug/
