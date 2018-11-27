@@ -14,7 +14,7 @@ class EmbeddedBot(ConsoleBotClient):
 
     def __init__(self, config_filename):
         print(os.listdir('.'))
-        os.chdir('../bots/BakaBot/config/xnix')
+        os.chdir('bots/BakaBot/config/xnix')
 
         sys.argv = ['playground.py', '--config', 'config.yaml',
                     '--cformat', 'yaml', '--logging', 'logging.yaml']
