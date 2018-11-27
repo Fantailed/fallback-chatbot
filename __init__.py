@@ -28,7 +28,8 @@ class FallbackChatbot(FallbackSkill):
 
     def ask_brain(self, utterance):
         response = self.aiml_bot.process_question(self.client_context, utterance)
-        # TODO: backup copy blabla
+        print("Utterance:", utterance)
+        print("Response:", response)
         return response
 
     def handle_fallback(self, message):
