@@ -35,7 +35,7 @@ class FallbackChatbot(FallbackSkill):
 
     def handle_fallback(self, message):
         print(self.settings.get("enabled"))
-        if self.settings.get("enabled") == 'true' or None:
+        if not self.settings.get("enabled") or self.settings.get("enabled") == 'true':
             utterance = message.data.get("utterance")
             answer = self.ask_brain(utterance)
             if answer != "":
