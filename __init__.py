@@ -46,6 +46,7 @@ class FallbackChatbot(FallbackSkill):
         return False
 
     def shutdown(self):
+        self.debug.close()
         self.remove_fallback(self.handle_fallback)
         super(FallbackChatbot, self).shutdown()
 
