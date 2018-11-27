@@ -21,6 +21,7 @@ class FallbackChatbot(FallbackSkill):
         # Initialize inner bot object
         self.aiml_bot = EmbeddedBot('config.yaml')
         self.client_context = self.aiml_bot.create_client_context("mycroft")
+        self.debug = open('debug_output.txt', 'w')
 
     def initialize(self):
         # 0 is high priority, 100 is low
@@ -28,8 +29,8 @@ class FallbackChatbot(FallbackSkill):
 
     def ask_brain(self, utterance):
         response = self.aiml_bot.process_question(self.client_context, utterance)
-        print("Utterance:", utterance)
-        print("Response:", response)
+        self.debug.write("Utterance:" + utterance)
+        self.debug.write("Response:" + response)
         return response
 
     def handle_fallback(self, message):

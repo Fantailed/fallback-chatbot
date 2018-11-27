@@ -5,6 +5,7 @@ venv/
 **/license.keys
 
 playground.py
+debug_output.txt
 
 bots/BakaBot/storage/conversations/
 bots/BakaBot/storage/debug/
