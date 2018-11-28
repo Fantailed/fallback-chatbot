@@ -8,7 +8,7 @@
 # when the skill gets installed later by a user.
 
 from mycroft.skills.core import FallbackSkill
-from utils import EmbeddedBot
+from utils.embeddedBot import EmbeddedBot
 
 
 # Each skill is contained within its own class, which inherits base methods
@@ -32,6 +32,8 @@ class FallbackChatbot(FallbackSkill):
 
     def handle_fallback(self, message):
         if not self.settings.get("enabled") or self.settings.get("enabled") == 'true':
+            if not self.settings.get("enabled"):
+                print("Warning: Bot does not have a setting called 'enabled'!")
             utterance = message.data.get("utterance")
             answer = self.ask_brain(utterance)
             if answer != "":
