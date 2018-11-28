@@ -1,17 +1,13 @@
 # TODO: Add an appropriate license to your skill before publishing.  See
 # the LICENSE file for more information.
 
-# Below is the list of outside modules you'll be using in your skill.
-# They might be built-in to Python, from mycroft-core or from external
-# libraries.  If you use an external library, be sure to include it
-# in the requirements.txt file so the library is installed properly
-# when the skill gets installed later by a user.
+
+import sys
+sys.path.append('.')
+
 
 from mycroft.skills.core import FallbackSkill
 from utils import EmbeddedBot
-import sys
-
-sys.path.append('.')
 
 
 class FallbackChatbot(FallbackSkill):
