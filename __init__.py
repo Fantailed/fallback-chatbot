@@ -8,11 +8,11 @@
 # when the skill gets installed later by a user.
 
 from mycroft.skills.core import FallbackSkill
-from utils.embeddedBot import EmbeddedBot
+from utils import EmbeddedBot
+import sys
 
+sys.path.append('.')
 
-# Each skill is contained within its own class, which inherits base methods
-# from the MycroftSkill class.  You extend this class as shown below.
 
 class FallbackChatbot(FallbackSkill):
     # The constructor of the skill, which calls MycroftSkill's constructor
