@@ -3,7 +3,7 @@
 
 
 import sys
-sys.path.append('.')
+sys.path.append('../')
 
 
 from mycroft.skills.core import FallbackSkill
