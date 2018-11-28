@@ -2,10 +2,6 @@
 # the LICENSE file for more information.
 
 
-import sys
-sys.path.append('../')
-
-
 from mycroft.skills.core import FallbackSkill
 from utils import EmbeddedBot
 
@@ -54,3 +50,8 @@ class FallbackChatbot(FallbackSkill):
 # Note that it's outside the class itself.
 def create_skill():
     return FallbackChatbot()
+
+
+if __name__ == '__main__':
+    fbc = FallbackChatbot()
+    fbc.handle_fallback("My name is Dave.")
