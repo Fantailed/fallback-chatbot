@@ -1,5 +1,4 @@
-import os
-import sys
+from globals import *
 from programy.clients.events.console.client import ConsoleBotClient
 from programy.config.file.yaml_file import YamlConfigurationFile
 from programy.config.programy import ProgramyConfiguration
@@ -13,17 +12,17 @@ sys.path.append('venv/Lib/site-packages/MetOffer-1.3.2.dist-info')
 class EmbeddedBot(ConsoleBotClient):
 
     def __init__(self, config_filename):
-        os.chdir('bots/BakaBot/config/xnix')
+        os.chdir(BOT_PATH + 'config/xnix')
 
-        sys.argv = ['__init__.py', '--config', 'config.yaml',
+        sys.argv = ['embeddedBot.py', '--config', 'config.yaml',
                     '--cformat', 'yaml', '--logging', 'logging.yaml']
 
         self._config_filename = config_filename
         ConsoleBotClient.__init__(self, "Console")
-        os.system('cls' if os.name == 'nt' else 'clear')
 
     def parse_arguments(self, argument_parser):
         client_args = CommandLineClientArguments(self, parser=None)
+        client_args.parse_args(self)
         return client_args
 
     def load_configuration(self, arguments):
@@ -36,6 +35,7 @@ class EmbeddedBot(ConsoleBotClient):
 
 
 if __name__ == '__main__':
+    os.chdir(SKILL_PATH)
     sys.argv = ['playground.py', '--config', 'config.yaml',
                 '--cformat', 'yaml', '--logging', 'logging.yaml']
     bot = EmbeddedBot(sys.argv[2])
