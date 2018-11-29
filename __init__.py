@@ -43,9 +43,9 @@ class FallbackChatbot(FallbackSkill):
                 return True
         return False
 
-    def shutdown(self):
-        self.remove_fallback(self.handle_fallback)
-        super(FallbackChatbot, self).shutdown()
+    # def shutdown(self):
+    #     self.remove_fallback(self.handle_fallback)
+    #     super(FallbackChatbot, self).shutdown()
 
     # The "stop" method defines what Mycroft does when told to stop during
     # the skill's execution. Return True if it has been handled.
