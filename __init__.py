@@ -1,5 +1,4 @@
-# TODO: Add an appropriate license to your skill before publishing.  See
-# the LICENSE file for more information.
+# I am too lazy to add copyright. Just don't abuse any of this please.
 
 import os
 import sys
@@ -11,17 +10,21 @@ from utils import EmbeddedBot
 from mycroft.skills.core import FallbackSkill
 
 
+__author__ = 'Fantailed'
+
+
 class FallbackChatbot(FallbackSkill):
     # The constructor of the skill, which calls MycroftSkill's constructor
     def __init__(self):
         os.chdir(SKILL_PATH)
         super(FallbackChatbot, self).__init__(name="FallbackChatbot")
         # Initialize inner bot object
-        self.aiml_bot = EmbeddedBot('config.yaml')
+        self.aiml_bot = None
         self.client_context = self.aiml_bot.create_client_context("mycroft")
-        os.chdir(MYCROFT_WORKING_DIR)
+        # os.chdir(MYCROFT_WORKING_DIR)
 
     def initialize(self):
+        self.aiml_bot = EmbeddedBot('config.yaml')
         # 0 is high priority, 100 is low
         self.register_fallback(self.handle_fallback, priority=90)
 
@@ -50,7 +53,7 @@ class FallbackChatbot(FallbackSkill):
     # The "stop" method defines what Mycroft does when told to stop during
     # the skill's execution. Return True if it has been handled.
     def stop(self):
-        pass
+        del self.aiml_bot
 
 
 # The "create_skill()" method is used to create an instance of the skill.
