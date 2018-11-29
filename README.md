@@ -30,8 +30,8 @@ Note that the installation of lxml can be _very_ slow on low RAM devices like th
 ever doubt that it's even doing anything, open another terminal and run `htop` on it.
 
 ## Examples 
-* ""My name is Dave.""
-* ""What is my name?""
+* "My name is Dave."
+* "What is my name?"
 
 ## Credits 
 Conny Lin @Fantailed
