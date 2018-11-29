@@ -1,9 +1,12 @@
 # TODO: Add an appropriate license to your skill before publishing.  See
 # the LICENSE file for more information.
 
+import sys
+print('Current PYTHONPATH:', sys.path)
 
-from mycroft.skills.core import FallbackSkill
+
 from utils import EmbeddedBot
+from mycroft.skills.core import FallbackSkill
 
 
 class FallbackChatbot(FallbackSkill):
