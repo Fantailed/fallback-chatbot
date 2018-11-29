@@ -1,6 +1,10 @@
 # TODO: Add an appropriate license to your skill before publishing.  See
 # the LICENSE file for more information.
 
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from globals import *
 
 from utils import EmbeddedBot

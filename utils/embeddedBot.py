@@ -1,3 +1,4 @@
+import sys
 from globals import *
 from programy.clients.events.console.client import ConsoleBotClient
 from programy.config.file.yaml_file import YamlConfigurationFile
