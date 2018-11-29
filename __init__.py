@@ -1,9 +1,10 @@
 # TODO: Add an appropriate license to your skill before publishing.  See
 # the LICENSE file for more information.
 
+import os
 import sys
-sys.path.append('/opt/mycroft/skills/fallback-chatbot.fantailed')
-
+_SKILL_PATH = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(_SKILL_PATH)
 
 from utils import EmbeddedBot
 from mycroft.skills.core import FallbackSkill
@@ -12,6 +13,7 @@ from mycroft.skills.core import FallbackSkill
 class FallbackChatbot(FallbackSkill):
     # The constructor of the skill, which calls MycroftSkill's constructor
     def __init__(self):
+        os.chdir(_SKILL_PATH)
         super(FallbackChatbot, self).__init__(name="FallbackChatbot")
         # Initialize inner bot object
         self.aiml_bot = EmbeddedBot('config.yaml')
