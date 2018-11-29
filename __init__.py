@@ -1,26 +1,25 @@
 # TODO: Add an appropriate license to your skill before publishing.  See
 # the LICENSE file for more information.
 
-# Below is the list of outside modules you'll be using in your skill.
-# They might be built-in to Python, from mycroft-core or from external
-# libraries.  If you use an external library, be sure to include it
-# in the requirements.txt file so the library is installed properly
-# when the skill gets installed later by a user.
-
-from mycroft.skills.core import FallbackSkill
-from utils import EmbeddedBot
+import os
 import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-sys.path.append('.')
+from globals import *
+
+from utils import EmbeddedBot
+from mycroft.skills.core import FallbackSkill
 
 
 class FallbackChatbot(FallbackSkill):
     # The constructor of the skill, which calls MycroftSkill's constructor
     def __init__(self):
+        os.chdir(SKILL_PATH)
         super(FallbackChatbot, self).__init__(name="FallbackChatbot")
         # Initialize inner bot object
         self.aiml_bot = EmbeddedBot('config.yaml')
         self.client_context = self.aiml_bot.create_client_context("mycroft")
+        os.chdir(MYCROFT_WORKING_DIR)
 
     def initialize(self):
         # 0 is high priority, 100 is low

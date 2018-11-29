@@ -4,6 +4,7 @@ venv/
 *.log
 **/license.keys
 
+settings.json
 playground.py
 
 bots/BakaBot/storage/conversations/

@@ -9,13 +9,13 @@ handlers:
     file:
         class: logging.handlers.RotatingFileHandler
         formatter: simple
-        filename: /tmp/bakabot.log
+        filename: bakabot.log
         maxBytes: 20972152
         backupCount: 10
         encoding: utf-8
 
 root:
-    level: DEBUG
+    level: ERROR
     handlers:
         - file
 
