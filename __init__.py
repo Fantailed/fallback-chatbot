@@ -4,7 +4,7 @@
 import os
 import sys
 print('Current path:', os.getcwd(), file=sys.stderr)
-os.chdir('~/mycroft/skills/fallback-chatbot.fantailed')
+os.chdir('/opt/mycroft/skills/fallback-chatbot.fantailed')
 
 
 from utils import EmbeddedBot
