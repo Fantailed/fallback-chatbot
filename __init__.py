@@ -3,10 +3,8 @@
 
 import os
 import sys
-print('Current PYTHONPATH:', sys.path)
-os.chdir('bots/BakaBot/scripts/xnix')
-os.system('export PYTHONPATH=../../../venv/Lib/site-packages/programy:../../../venv/Lib/site-packages/MetOffer-1.3.2.dist-info:.')
-os.chdir('../../../../')
+print('Current path:', os.getcwd(), file=sys.stderr)
+os.chdir('~/mycroft/skills/fallback-chatbot.fantailed')
 
 
 from utils import EmbeddedBot
