@@ -15,16 +15,16 @@ __author__ = 'Fantailed'
 class FallbackChatbot(FallbackSkill):
     # The constructor of the skill, which calls MycroftSkill's constructor
     def __init__(self):
-        os.chdir(SKILL_PATH)
         super(FallbackChatbot, self).__init__(name="FallbackChatbot")
         self.aiml_bot = None
         self.client_context = None
-        os.chdir(MYCROFT_WORKING_DIR)
 
     def initialize(self):
+        os.chdir(SKILL_PATH)
         # Initialize inner bot object
         self.aiml_bot = EmbeddedBot('config.yaml')
         self.client_context = self.aiml_bot.create_client_context("mycroft")
+        os.chdir(MYCROFT_WORKING_DIR)
         # 0 is high priority, 100 is low
         self.register_fallback(self.handle_fallback, priority=90)
 
