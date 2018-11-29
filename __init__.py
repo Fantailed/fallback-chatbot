@@ -1,8 +1,12 @@
 # TODO: Add an appropriate license to your skill before publishing.  See
 # the LICENSE file for more information.
 
+import os
 import sys
 print('Current PYTHONPATH:', sys.path)
+os.chdir('bots/BakaBot/scripts/xnix')
+os.system('export PYTHONPATH=../../../venv/Lib/site-packages/programy:../../../venv/Lib/site-packages/MetOffer-1.3.2.dist-info:.')
+os.chdir('../../../../')
 
 
 from utils import EmbeddedBot
