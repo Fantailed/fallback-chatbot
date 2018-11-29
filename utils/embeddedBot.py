@@ -13,7 +13,7 @@ sys.path.append('venv/Lib/site-packages/MetOffer-1.3.2.dist-info')
 class EmbeddedBot(ConsoleBotClient):
 
     def __init__(self, config_filename):
-        os.chdir(BOT_PATH + 'config/xnix')
+        os.chdir(BOT_PATH + 'config/windows')
 
         sys.argv = ['embeddedBot.py', '--config', 'config.yaml',
                     '--cformat', 'yaml', '--logging', 'logging.yaml']
@@ -51,5 +51,3 @@ if __name__ == '__main__':
 
     except KeyboardInterrupt:
         pass
-
-
